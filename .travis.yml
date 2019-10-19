@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - 12
+
+script:
+  - npm install -g boardify --unsafe-perm
+  - boardify --build
+  - rm -rf data .travis.yml .gitignore
+  - mv build/css .
+  - mv build/js .
+  - mv build/index.html .
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
+
+branches:
+  only:
+    - master
