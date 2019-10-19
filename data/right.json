@@ -1,6 +1,6 @@
 [
   {
-    "title": "My Github",
+    "title": "mkkhedawat",
     "link": "https://github.com/mkkhedawat",
     "icon": "home"
   },
@@ -13,10 +13,5 @@
     "title": "wiki",
     "link": "https://www.wikipedia.org/",
     "icon": "library_books"
-  },
-  {
-    "title": "AppDev : 12 Factor",
-    "link": "https://12factor.net/",
-    "icon": "school"
   }
 ]

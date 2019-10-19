@@ -3,7 +3,7 @@ node_js:
   - 12
 
 script:
-  - npm install -g boardify --unsafe-perm
+  - npm install -g boardify
   - boardify --build
   - rm -rf data .travis.yml .gitignore
   - mv build/css .
